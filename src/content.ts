@@ -1,26 +1,22 @@
 export const hero = {
   name: "Samidha Visai",
-  headline: "Engineer-turned-PM. I build AI for high-stakes domains.",
+  eyebrow: "Computer Science, University of Michigan · Senior PM · Los Angeles",
+  headline: "Builder PM. I ship AI products for high-stakes domains.",
   subhead:
-    "Most PMs hand off specs. I ship. CS degree, ex-SWE (Microsoft, Lyft), then product at Secureframe, Affirm (credit & disclosures, billions in scale), and a live AI product I built and run myself. I make non-deterministic AI reliable where mistakes carry real legal, financial, and health consequences.",
-  chips: [
-    "Builder PM", "Ex-engineer", "Ships AI products",
-    "Regulated & high-stakes", "LLM reliability", "Vibe-codes",
-  ],
+    "Engineer turned product manager working at the intersection of AI and regulated, high-stakes domains. I build AI products myself and take them live with real customers — from the paying-customer AI product I run today, back to shipping Affirm's financing inside Amazon and Walmart checkout and partner-engineering integrations at Lyft. Equal parts builder and the technical partner who gets AI integrated, trusted, and adopted inside complex businesses — where mistakes carry real legal, financial, and health consequences.",
+  chips: [],
   ctas: [
     { label: "See my work", href: "#work", kind: "primary" as const },
-    { label: "Try the live demo", href: "https://practicesystems.ai", kind: "secondary" as const },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/samidhavisai", kind: "ghost" as const },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/samidhavisai", kind: "secondary" as const },
   ],
   headshot: "/headshot.jpg",
 };
 
 export const proofStats = [
-  { value: "4 yrs", label: "Senior PM at Affirm" },
-  { value: "$1B+", label: "GMV unlocked — Amazon B2B lending" },
-  { value: "1,000+", label: "Walmart kiosks shipped to" },
-  { value: "3", label: "regulated domains: fintech · healthcare · compliance" },
-  { value: "Live", label: "AI product with paying customers" },
+  { value: "9 yrs", label: "Shipping products in regulated, high-stakes tech" },
+  { value: "$1B+", label: "GMV unlocked in fintech" },
+  { value: "0→1", label: "Products launched from scratch" },
+  { value: "6+", label: "Industries: fintech, healthcare, security, edtech, mobility, AI" },
 ];
 
 export type CaseStudy = {
@@ -30,19 +26,19 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    title: "Cashflow Underwriting platform",
+    title: "Cashflow underwriting platform",
     role: "Owned · launched · managed",
-    problem: "Extend credit to thin- and no-file users without raising risk.",
-    did: "Built a net-new cashflow underwriting system with ML and data teams, integrating Plaid across four customer segments with segmented decline logic and AAN compliance sign-off.",
-    outcome: "Extended access to users with limited credit history while preserving risk integrity; program scaled across Affirm's underwriting layer.",
+    problem: "Approve people with little or no credit history without taking on more risk.",
+    did: "Built a new underwriting system with our ML and data teams that reads bank-transaction data (via Plaid) across four customer segments, each with its own approval logic and legal sign-off on the required customer disclosures.",
+    outcome: "Opened up credit to people with limited credit history while holding the risk line; the system scaled across Affirm's underwriting.",
     link: { label: "Affirm underwriting (Yahoo Finance)", href: "https://finance.yahoo.com/news/affirm-updates-underwriting-enhanced-signals-120000252.html" },
   },
   {
-    title: "Walmart in-store BNPL",
+    title: "Walmart in-store financing",
     role: "Led · owned · launched",
-    problem: "Bring Affirm financing into a net-new physical channel — Walmart self-checkout.",
-    did: "Led the cross-functional rollout of a financing interface into Walmart's in-store checkout.",
-    outcome: "Launched in 1,000+ self-checkout kiosks nationwide, ~$100M+ GMV impact.",
+    problem: "Bring Affirm financing into a new physical channel — Walmart self-checkout.",
+    did: "Led the cross-functional rollout of a financing experience into Walmart's in-store checkout.",
+    outcome: "Launched in 1,000+ self-checkout kiosks nationwide, driving $100M+ in financed sales.",
     link: { label: "Axios", href: "https://www.axios.com/pro/fintech-deals/2023/12/19/affirm-in-store-bnpl-walmart" },
   },
   {
@@ -58,15 +54,8 @@ export const caseStudies: CaseStudy[] = [
     role: "Owned · launched (0→1)",
     problem: "Affirm had no B2B lending product; Amazon was the anchor partner.",
     did: "Spearheaded the end-to-end buildout — identity, checkout UX, and underwriting workflows from zero — and launched with Amazon as first partner.",
-    outcome: "Unlocked a $1B+ GMV opportunity; covered by CNBC.",
+    outcome: "Unlocked a $1B+ sales opportunity; covered by CNBC.",
     link: { label: "Affirm B2B Payments", href: "https://www.affirm.com/business/solutions/b2b-payments" },
-  },
-  {
-    title: "Disclosures self-service portal",
-    role: "Initiated · prototyped · drove to roadmap",
-    problem: "Compliance and legal spent ~25% of their time managing regulatory disclosures. No one owned it on the product side.",
-    did: "Quantified the burden, then built a working prototype myself with Claude Code against Affirm's internal codebase (plus Figma Make) to make the future state concrete and win prioritization.",
-    outcome: "Moved from invisible problem to prioritized, largely-built roadmap item — the regulated-domain + builder-PM story in one.",
   },
 ];
 
@@ -81,7 +70,7 @@ export const builds: Build[] = [
     tag: "Live · paying customers (LA)",
     blurb:
       "An AI receptionist purpose-built for dental practices — answers every call 24/7 with natural conversation, captures new-patient intake, handles urgent triage, escalates per the practice's rules. Engineered solo. There's a live demo line you can actually call.",
-    stack: "OpenAI + Retell + Node.js · built with Claude Code · EN/ES · sub-second latency",
+    stack: "OpenAI + Retell + Node.js · built with Claude Code · English & Spanish · sub-second response",
     link: { label: "practicesystems.ai (call the demo line)", href: "https://practicesystems.ai" },
   },
   {
@@ -89,7 +78,7 @@ export const builds: Build[] = [
     tag: "Sold-out first cohort",
     blurb:
       "A live online AI building program for teens (grades 7–10): two weeks, eight sessions, one real shipped product per student. Sole instructor and founder. Thesis: the gap that matters is between kids who use AI as a toy and kids who use it as a tool.",
-    stack: "Teaches Replit + OpenAI + GitHub + JS fundamentals",
+    stack: "Teaches Replit + OpenAI + GitHub + JavaScript fundamentals",
     link: { label: "aibuilderscamp.com", href: "https://aibuilderscamp.com" },
   },
 ];
@@ -108,6 +97,7 @@ export const timeline: TimelineItem[] = [
 export const toolkit = {
   "PM craft": ["0→1 product", "Experimentation", "Customer research", "Specs eng enjoy reading", "Cross-functional leadership"],
   "AI / LLM": ["Prompting", "Evals", "Tool use / structured output", "LLM-in-production", "Latency & reliability"],
+  "Working with customers": ["Enterprise integration", "Technical pre-sales", "Partner engineering", "Implementation & adoption"],
   "Code": ["Python", "JavaScript/TypeScript", "C++", "REST APIs", "Claude Code", "Cursor"],
   "Domains": ["Fintech / lending", "Healthcare ops", "Compliance / security", "Identity & risk"],
 };

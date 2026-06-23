@@ -2,29 +2,20 @@ import { hero } from "../content";
 
 export function Hero() {
   return (
-    <section className="mx-auto max-w-[1040px] px-6 pt-16 pb-12 grid md:grid-cols-[1.4fr_1fr] gap-10 items-center">
+    <section className="mx-auto max-w-[1080px] px-6 pt-20 pb-16 grid md:grid-cols-[1.5fr_1fr] gap-14 items-center">
       <div>
-        <h1 className="text-4xl sm:text-5xl leading-tight font-semibold tracking-tight">{hero.headline}</h1>
-        <p className="mt-6 text-lg text-gray-600 max-w-xl">{hero.subhead}</p>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {hero.chips.map((c) => (
-            <span key={c} className="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-blue">{c}</span>
-          ))}
-        </div>
-        <div className="mt-8 flex flex-wrap gap-3">
-          {hero.ctas.map((c) => (
-            <a key={c.label} href={c.href}
-              target={c.href.startsWith("http") ? "_blank" : undefined}
-              rel={c.href.startsWith("http") ? "noreferrer" : undefined}
-              className={
-                c.kind === "primary" ? "px-5 py-2.5 rounded-lg bg-brand-blue text-white font-medium" :
-                c.kind === "secondary" ? "px-5 py-2.5 rounded-lg border border-brand-blue text-brand-blue font-medium" :
-                "px-5 py-2.5 rounded-lg text-gray-600 font-medium hover:text-brand-blue"
-              }>{c.label}</a>
-          ))}
+        <p className="text-xs uppercase tracking-[0.18em] text-ink/45">{hero.eyebrow}</p>
+        <h1 className="mt-6 text-4xl sm:text-[3.25rem] leading-[1.05] font-semibold">{hero.headline}</h1>
+        <p className="mt-7 text-lg leading-relaxed text-ink/65 max-w-xl">{hero.subhead}</p>
+        <div className="mt-9 flex flex-wrap items-center gap-6">
+          <a href="#work" className="px-5 py-2.5 rounded-md bg-accent text-paper text-sm font-medium hover:opacity-90 transition-opacity">See my work</a>
+          <a href={hero.ctas[1].href} target="_blank" rel="noreferrer" className="text-sm font-medium text-ink/70 hover:text-accent transition-colors">LinkedIn ↗</a>
         </div>
       </div>
-      <img src={hero.headshot} alt="Samidha Visai" className="rounded-2xl w-full object-cover shadow-sm" />
+      <div className="md:justify-self-end mx-auto md:mx-0 w-full max-w-[260px] aspect-[4/5] overflow-hidden rounded-md">
+        <img src={hero.headshot} alt="Samidha Visai"
+          className="w-full h-full object-cover object-top scale-[1.45] origin-top grayscale-[12%]" />
+      </div>
     </section>
   );
 }
