@@ -10,6 +10,7 @@
 
 ## Global Constraints
 
+- **Build on branch `redesign-bento`** off current main (`git checkout -b redesign-bento` before Task 1). Do NOT mix with the editorial Version B.
 - **Factual accuracy (verbatim from spec):** Practice Systems AI = OpenAI + Retell + Node.js, paying customers in LA, built with Claude Code. AI Builders Camp = sold-out cohort, teaches Replit + OpenAI + GitHub. NEVER claim Anthropic-customer-in-production. Do not feature Dental OS. All numbers shown must be real proof stats — no fabricated metrics/gauges.
 - **Hero one-liner (verbatim):** "I build and ship AI products for high-stakes, regulated domains."
 - **Palette:** canvas soft gray `#E8EAED`, cards white `#FFFFFF` radius ~24px soft shadow, lime accent `#D4F500`, cobalt accent `#3D5AFE`, ink `#14181F`. Monospace for metadata/pills.
