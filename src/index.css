@@ -4,17 +4,16 @@
   --color-brand-blue: #2563EB;
   --color-brand-dark: #0B1220;
   --color-brand-ink: #111827;
-  --font-family-display: "Fraunces", Georgia, serif;
-  --font-family-sans: "Inter", system-ui, sans-serif;
-  --max-width-content: 1040px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 body {
   background-color: white;
   color: var(--color-brand-ink);
-  font-family: var(--font-family-sans);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
-h1, h2, h3 { font-family: var(--font-family-display); }
+h1, h2, h3 { font-family: var(--font-display); }
