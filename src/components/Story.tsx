@@ -3,9 +3,9 @@ import { Section } from "./Section";
 
 export function Story() {
   return (
-    <Section id="story" heading="The path here">
+    <Section id="story" heading="Path">
       <p className="text-lg leading-relaxed text-ink/65 max-w-2xl mb-12 -mt-4">
-        Engineer first, then product. The thread across every chapter: regulated, high-stakes systems where decisions have to be right.
+        Engineer first, then product, now founder. Every chapter has been the same kind of work: hard, regulated systems where the decision has to be right. Each step moved me from building one piece to owning the whole product.
       </p>
       <ol>
         {timeline.map((t, i) => (

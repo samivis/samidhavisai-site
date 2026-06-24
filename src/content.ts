@@ -1,9 +1,9 @@
 export const hero = {
   name: "Samidha Visai",
-  eyebrow: "Computer Science, University of Michigan · Senior PM · Los Angeles",
-  headline: "Builder PM. I ship AI products for high-stakes domains.",
+  eyebrow: "AI Product Manager · Engineer by training · Los Angeles",
+  headline: "AI product manager with an engineer's instincts and a taste for hard problems.",
   subhead:
-    "Engineer turned product manager working at the intersection of AI and regulated, high-stakes domains. I build AI products myself and take them live with real customers — from the paying-customer AI product I run today, back to shipping Affirm's financing inside Amazon and Walmart checkout and partner-engineering integrations at Lyft. Equal parts builder and the technical partner who gets AI integrated, trusted, and adopted inside complex businesses — where mistakes carry real legal, financial, and health consequences.",
+    "Nine years shipping products in fintech, health, and compliance, and helping complex organizations integrate and adopt new tech. I build real products, not just specs, and I go where AI meets real-world stakes. On the side, I teach the next wave of builders to ship with AI.",
   chips: [],
   ctas: [
     { label: "See my work", href: "#work", kind: "primary" as const },
@@ -16,7 +16,7 @@ export const proofStats = [
   { value: "9 yrs", label: "Shipping products in regulated, high-stakes tech" },
   { value: "$1B+", label: "GMV unlocked in fintech" },
   { value: "0→1", label: "Products launched from scratch" },
-  { value: "6+", label: "Industries: fintech, healthcare, security, edtech, mobility, AI" },
+  { value: "6+", label: "Industries: fintech, healthcare, compliance, edtech, mobility, AI" },
 ];
 
 export type CaseStudy = {
@@ -32,6 +32,13 @@ export const caseStudies: CaseStudy[] = [
     did: "Built a new underwriting system with our ML and data teams that reads bank-transaction data (via Plaid) across four customer segments, each with its own approval logic and legal sign-off on the required customer disclosures.",
     outcome: "Opened up credit to people with limited credit history while holding the risk line; the system scaled across Affirm's underwriting.",
     link: { label: "Affirm underwriting (Yahoo Finance)", href: "https://finance.yahoo.com/news/affirm-updates-underwriting-enhanced-signals-120000252.html" },
+  },
+  {
+    title: "Compliance disclosures portal",
+    role: "Built · pitched · handed to eng",
+    problem: "Compliance and legal were spending roughly a quarter of their time manually managing customer-facing disclosures across Affirm's products.",
+    did: "Quantified the cost, then built a working self-service portal prototype directly against Affirm's codebase in Claude Code (UI in Figma Make) so teams could manage their own disclosures.",
+    outcome: "Won product leadership buy-in; engineering is taking it to production.",
   },
   {
     title: "Walmart in-store financing",
@@ -99,7 +106,7 @@ export const toolkit = {
   "AI / LLM": ["Prompting", "Evals", "Tool use / structured output", "LLM-in-production", "Latency & reliability"],
   "Working with customers": ["Enterprise integration", "Technical pre-sales", "Partner engineering", "Implementation & adoption"],
   "Code": ["Python", "JavaScript/TypeScript", "C++", "REST APIs", "Claude Code", "Cursor"],
-  "Domains": ["Fintech / lending", "Healthcare ops", "Compliance / security", "Identity & risk"],
+  "Domains": ["Credit decisioning", "Fintech / lending", "Healthcare ops", "Compliance", "Identity & risk", "AI automation"],
 };
 
 export const contact = {
