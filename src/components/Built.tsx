@@ -4,14 +4,9 @@ import { Section } from "./Section";
 export function Built() {
   return (
     <Section id="built" heading="Things I've built">
-      <div className="grid md:grid-cols-2 gap-px bg-line border border-line">
-        {builds.map((b, i) => (
-          <div
-            key={b.name}
-            className={`bg-paper p-8${
-              builds.length % 2 === 1 && i === builds.length - 1 ? " md:col-span-2" : ""
-            }`}
-          >
+      <div className="grid md:grid-cols-3 gap-px bg-line border border-line">
+        {builds.map((b) => (
+          <div key={b.name} className="bg-paper p-8">
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="text-xl font-medium">{b.name}</h3>
               <span className="text-xs uppercase tracking-wider text-ink/45 shrink-0">{b.tag}</span>
