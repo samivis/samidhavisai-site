@@ -28,8 +28,8 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-[1080px] px-6 pt-20 pb-16 grid md:grid-cols-[1.15fr_1fr] gap-14 items-stretch">
-      <div className="hero-rise self-center">
+    <section className="mx-auto max-w-[1080px] px-6 pt-20 pb-16 grid md:grid-cols-[1.15fr_1fr] gap-14 items-start">
+      <div className="hero-rise">
         <p className="text-xs uppercase tracking-[0.18em] text-ink/45">{hero.eyebrow}</p>
         <h1 className="mt-6 text-4xl sm:text-[3.25rem] leading-[1.05] font-semibold">{hero.headline}</h1>
         <p className="mt-7 text-lg leading-relaxed text-ink/65 max-w-xl">{hero.subhead}</p>
@@ -39,7 +39,7 @@ export function Hero() {
           <a href={contact.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-ink/60 hover:text-accent transition-colors"><GitHubIcon className="w-6 h-6" /></a>
         </div>
       </div>
-      <div className="hero-reveal md:justify-self-end w-full min-h-[420px] md:min-h-[560px] overflow-hidden rounded-lg">
+      <div className="hero-reveal md:justify-self-end w-full aspect-[4/5] max-h-[520px] overflow-hidden rounded-lg">
         <img ref={imgRef} src={hero.headshot} alt="Samidha Visai"
           className="w-full h-full object-cover object-top grayscale-[10%] will-change-transform"
           style={{ transform: "scale(1.06)" }} />
