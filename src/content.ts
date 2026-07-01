@@ -81,6 +81,14 @@ export const builds: Build[] = [
     stack: "Teaches Replit + OpenAI + GitHub + JavaScript fundamentals",
     link: { label: "aibuilderscamp.com", href: "https://aibuilderscamp.com" },
   },
+  {
+    name: "Personal Finance Automation",
+    tag: "Open-source · built for myself",
+    blurb:
+      "A dependency-free Python toolkit that pulls my bank transactions (Teller API over mutual-TLS) and auto-syncs them into weekly tabs of a Google Sheet from one command — dedupes, categorizes, and is safe to re-run. The exact 'automate the annoying weekly thing' pattern I love teaching.",
+    stack: "Python · Teller API · Google Sheets API · built with Claude Code · real tests + MCP setup",
+    link: { label: "github.com/samivis/personal-finance-apps", href: "https://github.com/samivis/personal-finance-apps" },
+  },
 ];
 
 export type TimelineItem = { period: string; org: string; role: string; note: string };

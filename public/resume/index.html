@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samidha Visai — Résumé</title>
+  <meta name="description" content="AI instructor and hands-on builder. Résumé of Samidha Visai." />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #4b5563;
+      --accent: #2563EB;
+      --dark: #0B1220;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 32px 72px;
+    }
+    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; letter-spacing: -0.01em; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Top bar */
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 13px; color: var(--muted); margin-bottom: 40px;
+    }
+    .topbar .print-link { cursor: pointer; }
+
+    /* Header */
+    header { margin-bottom: 8px; }
+    h1 { font-size: 44px; font-weight: 700; margin: 0 0 6px; line-height: 1.05; }
+    .contact { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+    .links { font-size: 14px; margin: 0; }
+    .links a { margin-right: 14px; white-space: nowrap; }
+
+    .summary {
+      margin: 22px 0 8px;
+      font-size: 16px;
+      color: var(--ink);
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
+    }
+    .summary strong { font-weight: 600; }
+
+    section { margin-top: 34px; }
+    h2 {
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--accent);
+      margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+    }
+
+    .entry { margin-bottom: 20px; page-break-inside: avoid; }
+    .entry-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 12px; flex-wrap: wrap;
+    }
+    h3 { font-size: 17px; font-weight: 600; margin: 0; color: var(--ink); }
+    .meta { font-size: 13px; color: var(--muted); white-space: nowrap; }
+    .sub { font-size: 13.5px; color: var(--muted); margin: 2px 0 8px; }
+    .sub a { color: var(--accent); }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { margin-bottom: 6px; color: var(--muted); }
+    li strong, .entry p strong { color: var(--ink); font-weight: 600; }
+    .entry > p { margin: 6px 0 0; color: var(--muted); }
+
+    .tools {
+      background: var(--dark); color: #e5e7eb; border-radius: 12px;
+      padding: 22px 24px; font-size: 14px; line-height: 1.8;
+    }
+    .tools h2 { color: #93b4ff; border-bottom-color: rgba(255,255,255,0.14); }
+
+    footer {
+      margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+      font-size: 13px; color: var(--muted); text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 32px 20px 48px; }
+      h1 { font-size: 34px; }
+      .meta { white-space: normal; }
+    }
+
+    @page { margin: 14mm; }
+    @media print {
+      body { font-size: 11pt; }
+      .wrap { padding: 0; max-width: none; }
+      .topbar { display: none; }
+      a { color: var(--ink); text-decoration: none; }
+      .tools { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+      .tools h2 { color: var(--accent); }
+      .summary { border-left-color: var(--accent); }
+      section, .entry { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a href="https://samidhavisai.com">← samidhavisai.com</a>
+      <a class="print-link" onclick="window.print()">Download / print</a>
+    </div>
+
+    <header>
+      <h1>Samidha Visai</h1>
+      <p class="contact">Los Angeles, CA · 734-674-4780 · samidhamv@gmail.com</p>
+      <p class="links">
+        <a href="https://samidhavisai.com">samidhavisai.com</a>
+        <a href="https://linkedin.com/in/samidhavisai">linkedin.com/in/samidhavisai</a>
+        <a href="https://practicesystems.ai">practicesystems.ai</a>
+        <a href="https://aibuilderscamp.com">aibuilderscamp.com</a>
+      </p>
+    </header>
+
+    <p class="summary">
+      <strong>AI instructor and hands-on builder.</strong> I teach non-technical beginners to
+      build with Claude and other AI tools and vibe-code real, working software — and I ship
+      production AI products myself, so I teach the whole path from idea to a live URL. Warm,
+      plain-English, build-alongside. Engineer by training (Michigan CS).
+    </p>
+
+    <section>
+      <h2>Teaching &amp; Building with AI</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Founder &amp; Lead Instructor — AI Builders Camp</h3>
+          <span class="meta">2026–present</span>
+        </div>
+        <p class="sub"><a href="https://aibuilderscamp.com">aibuilderscamp.com</a></p>
+        <ul>
+          <li>Designed and teach a full build-along AI curriculum that takes complete beginners (zero coding background) to a real AI app deployed to a live URL, built by vibe-coding with an AI agent. Sole curriculum designer and instructor.</li>
+          <li>Run live, hands-on sessions on the exact rhythm this role needs: demo → teach one idea → build together in parallel → make it yours → share. Teach the full toolkit — talking to Claude and other AI agents, giving them taste (avoiding "AI slop"), building automations, AI ethics, shipping — and iterate the teaching from member feedback.</li>
+          <li>Outcomes: one recent cohort of 8 shipped 8 live apps, judged at a Demo Day by an outside panel (a Google AI engineer, a UX designer, a tech investor). Learner survey: 4.6/5 fun, 4.6/5 overall — every "what would you change" answer asked for more.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Founder &amp; Solo Builder — Practice Systems AI</h3>
+          <span class="meta">2025–present</span>
+        </div>
+        <p class="sub"><a href="https://practicesystems.ai">practicesystems.ai</a></p>
+        <ul>
+          <li>Designed, built, and shipped a live AI voice product end-to-end, solo — engineered with Claude Code (OpenAI reasoning, Retell voice, Node.js). Live 24/7 with paying customers; bilingual English/Spanish. Proof I don't just prototype — I can demo Claude live and teach what taking a vibe-coded idea to actually live really takes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Affirm — Senior Product Manager · Product Manager</h3>
+          <span class="meta">2022–2026</span>
+        </div>
+        <p class="sub">Senior Product Manager (2024–2026) · Product Manager (2022–2024) · San Francisco / Remote</p>
+        <ul>
+          <li>Prototyped internal tools by hand with Claude Code against Affirm's real codebase to win leadership buy-in — turning ideas into working demos, not slide decks.</li>
+          <li>Led cross-functional programs across engineering, ML, legal, and compliance, taking products from concept to launch in a complex, highly regulated environment.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Secureframe — Product Manager, first product hire</h3>
+          <span class="meta">2021–2022</span>
+        </div>
+        <p class="sub">San Francisco</p>
+        <ul>
+          <li>Built the product function from scratch at a Series A B2B SaaS company; owned Platform and Automations products end-to-end.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Clever — Product Manager</h3>
+          <span class="meta">2020–2021</span>
+        </div>
+        <p class="sub">San Francisco</p>
+        <ul>
+          <li>Led product strategy for 20+ education apps integrating with Clever's APIs, standardizing data access for 1.2M+ students.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Dresspass — Co-founder</h3>
+          <span class="meta">2019–2020</span>
+        </div>
+        <p class="sub">New York</p>
+        <ul>
+          <li>Launched a peer-to-peer clothing rental marketplace; led product, growth, and user research, onboarding thousands of users and raising angel investment.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Lyft — Partner Engineer</h3>
+          <span class="meta">2017–2019</span>
+        </div>
+        <p class="sub">San Francisco</p>
+        <ul>
+          <li>Shipped healthcare and hospitality API integrations (Allscripts, Marriott), owning technical delivery across engineering, sales, and support.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Microsoft — Software Engineering Intern</h3>
+          <span class="meta">2016</span>
+        </div>
+        <p class="sub">Bellevue, WA — received full-time return offer.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>B.S.E. Computer Science — University of Michigan</h3>
+          <span class="meta">2017</span>
+        </div>
+        <p>Leinweber Software Scholar (1 of 7 CS Eng students) · True Entrepreneur Corps, True Ventures (1 of 14 worldwide) · AI for Product Certification, Product School (2024).</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="tools">
+        <h2>Tools I Use &amp; Teach</h2>
+        Claude &amp; Claude Code · vibe-coding / AI-agent building · voice AI agents (built one live) · automations &amp; scheduled jobs · Cursor · Codex · ChatGPT / OpenAI API · Replit · v0 · Figma Make · Granola · GitHub · MCP · prompt engineering · LLM-in-production · Python · JavaScript / Node.js
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://samidhavisai.com">samidhavisai.com</a>
+    </footer>
+  </div>
+</body>
+</html>
