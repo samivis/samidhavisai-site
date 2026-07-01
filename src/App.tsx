@@ -14,8 +14,8 @@ export default function App() {
       <Nav />
       <Hero />
       <Reveal><ProofBar /></Reveal>
-      <Reveal><SelectedWork /></Reveal>
       <Reveal><Built /></Reveal>
+      <Reveal><SelectedWork /></Reveal>
       <Reveal><Story /></Reveal>
       <Reveal><Toolkit /></Reveal>
       <Reveal><Contact /></Reveal>
