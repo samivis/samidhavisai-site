@@ -106,5 +106,6 @@ export const contact = {
   heading: "Let's build something.",
   email: "samidhamv@gmail.com",
   linkedin: "https://www.linkedin.com/in/samidhavisai",
+  github: "https://github.com/samivis",
   product: "https://practicesystems.ai",
 };

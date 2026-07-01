@@ -1,4 +1,5 @@
 import { contact } from "../content";
+import { LinkedInIcon, GitHubIcon } from "./SocialIcons";
 
 export function Contact() {
   return (
@@ -7,7 +8,12 @@ export function Contact() {
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">{contact.heading}</h2>
         <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-paper/80">
           <a className="hover:text-paper transition-colors" href={`mailto:${contact.email}`}>{contact.email}</a>
-          <a className="hover:text-paper transition-colors" href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a className="inline-flex items-center gap-2 hover:text-paper transition-colors" href={contact.linkedin} target="_blank" rel="noreferrer">
+            <LinkedInIcon /> LinkedIn
+          </a>
+          <a className="inline-flex items-center gap-2 hover:text-paper transition-colors" href={contact.github} target="_blank" rel="noreferrer">
+            <GitHubIcon /> GitHub
+          </a>
           <a className="hover:text-paper transition-colors" href={contact.product} target="_blank" rel="noreferrer">Practice Systems AI ↗</a>
         </div>
         <p className="mt-16 text-xs text-paper/40">© {new Date().getFullYear()} Samidha Visai</p>
