@@ -6,18 +6,19 @@ import { Built } from "./components/Built";
 import { Story } from "./components/Story";
 import { Toolkit } from "./components/Toolkit";
 import { Contact } from "./components/Contact";
+import { Reveal } from "./components/Reveal";
 
 export default function App() {
   return (
     <div id="top">
       <Nav />
       <Hero />
-      <ProofBar />
-      <SelectedWork />
-      <Built />
-      <Story />
-      <Toolkit />
-      <Contact />
+      <Reveal><ProofBar /></Reveal>
+      <Reveal><SelectedWork /></Reveal>
+      <Reveal><Built /></Reveal>
+      <Reveal><Story /></Reveal>
+      <Reveal><Toolkit /></Reveal>
+      <Reveal><Contact /></Reveal>
     </div>
   );
 }

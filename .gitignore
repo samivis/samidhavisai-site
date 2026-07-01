@@ -2,3 +2,7 @@ node_modules
 dist
 .DS_Store
 .gstack/
+.claude/
+
+# Personal reference notes / inspiration — local only, never deployed or pushed
+references/

@@ -3,7 +3,7 @@ export const hero = {
   eyebrow: "AI Product Manager · Engineer by training · Los Angeles",
   headline: "AI product manager with an engineer's instincts and a taste for hard problems.",
   subhead:
-    "Nine years shipping products in fintech, health, and compliance, and helping complex organizations integrate and adopt new tech. I build real products, not just specs, and I go where AI meets real-world stakes. On the side, I teach the next wave of builders to ship with AI.",
+    "Nine years shipping products in fintech, health, and compliance, and helping complex organizations integrate and adopt new tech. I build real products, not just specs, and I go where AI meets real-world stakes.",
   chips: [],
   ctas: [
     { label: "See my work", href: "#work", kind: "primary" as const },
@@ -32,13 +32,6 @@ export const caseStudies: CaseStudy[] = [
     did: "Built a new underwriting system with our ML and data teams that reads bank-transaction data (via Plaid) across four customer segments, each with its own approval logic and legal sign-off on the required customer disclosures.",
     outcome: "Opened up credit to people with limited credit history while holding the risk line; the system scaled across Affirm's underwriting.",
     link: { label: "Affirm underwriting (Yahoo Finance)", href: "https://finance.yahoo.com/news/affirm-updates-underwriting-enhanced-signals-120000252.html" },
-  },
-  {
-    title: "Compliance disclosures portal",
-    role: "Built · pitched · handed to eng",
-    problem: "Compliance and legal were spending roughly a quarter of their time manually managing customer-facing disclosures across Affirm's products.",
-    did: "Quantified the cost, then built a working self-service portal prototype directly against Affirm's codebase in Claude Code (UI in Figma Make) so teams could manage their own disclosures.",
-    outcome: "Won product leadership buy-in; engineering is taking it to production.",
   },
   {
     title: "Walmart in-store financing",
