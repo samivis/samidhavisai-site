@@ -3,6 +3,7 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "Path", href: "#story" },
   { label: "Contact", href: "#contact" },
+  { label: "Résumé", href: "/cv/" },
 ];
 
 export function Nav() {

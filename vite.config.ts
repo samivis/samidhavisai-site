@@ -14,6 +14,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         resume: resolve(__dirname, 'resume/index.html'),
+        cv: resolve(__dirname, 'cv/index.html'),
       },
     },
   },
