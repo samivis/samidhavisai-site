@@ -170,7 +170,6 @@ function Resume({ content }: { content: CvContent }) {
             </div>
             <div className="mt-4 space-y-1 text-[15px] text-ink/70">
               <p>{contact.location}</p>
-              <p>{contact.phone}</p>
               <p>{contact.email}</p>
             </div>
             <div className="mt-6 grid gap-2 text-sm">
