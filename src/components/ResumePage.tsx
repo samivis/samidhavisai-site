@@ -1,4 +1,5 @@
 import { Section } from "./Section";
+import { EmailLink } from "./EmailLink";
 
 const contactLinks = [
   { label: "Site", href: "https://samidhavisai.com" },
@@ -54,12 +55,9 @@ export function ResumePage() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
-              <a
-                href="mailto:samidhamv@gmail.com"
-                className="px-5 py-2.5 rounded-md bg-accent text-paper text-sm font-medium hover:opacity-90 transition-opacity"
-              >
+              <EmailLink className="px-5 py-2.5 rounded-md bg-accent text-paper text-sm font-medium hover:opacity-90 transition-opacity">
                 Email me
-              </a>
+              </EmailLink>
               <a
                 href="https://linkedin.com/in/samidhavisai"
                 target="_blank"
@@ -84,7 +82,7 @@ export function ResumePage() {
             <div className="mt-4 space-y-1 text-[15px] text-ink/70">
               <p>Los Angeles, CA</p>
               <p>734-674-4780</p>
-              <p>samidhamv@gmail.com</p>
+              <p><EmailLink className="hover:text-accent transition-colors" /></p>
             </div>
             <div className="mt-6 grid gap-2 text-sm">
               {contactLinks.map((link) => (

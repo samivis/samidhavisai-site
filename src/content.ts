@@ -102,9 +102,13 @@ export const toolkit = {
   "Domains": ["Credit decisioning", "Fintech / lending", "Healthcare ops", "Compliance", "Identity & risk", "AI automation"],
 };
 
+// Email is split into parts so bots that scrape the HTML or JS bundle
+// never see a full "name@domain.com" string. It's reassembled at runtime
+// in the EmailLink component.
+export const emailParts = ["samidhamv", "gmail.com"] as const;
+
 export const contact = {
   heading: "Let's build something.",
-  email: "samidhamv@gmail.com",
   linkedin: "https://www.linkedin.com/in/samidhavisai",
   github: "https://github.com/samivis",
   product: "https://practicesystems.ai",

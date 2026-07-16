@@ -1,4 +1,5 @@
 import { contact } from "../content";
+import { EmailLink } from "./EmailLink";
 import { LinkedInIcon, GitHubIcon } from "./SocialIcons";
 
 export function Contact() {
@@ -7,7 +8,7 @@ export function Contact() {
       <div className="mx-auto max-w-[1080px] px-6 py-24">
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">{contact.heading}</h2>
         <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-paper/80">
-          <a className="hover:text-paper transition-colors" href={`mailto:${contact.email}`}>{contact.email}</a>
+          <EmailLink className="hover:text-paper transition-colors" />
           <a className="inline-flex items-center gap-2 hover:text-paper transition-colors" href={contact.linkedin} target="_blank" rel="noreferrer">
             <LinkedInIcon /> LinkedIn
           </a>
